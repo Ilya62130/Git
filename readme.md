@@ -497,9 +497,9 @@ Git сообщит об этом с помощью статуса modified: фа
 ```mermaid
 graph LR;
 A.txt --> untracked;
-A.txt -- "git add" --> staged(+ tracked);
+A.txt -- "git add" --> staged;
 A.txt -- "git commit" --> tracked;
-A.txt -- "Изменения" --> modified(+ tracked);
+A.txt -- "Изменения" --> modified;
 ```
 
 ___
