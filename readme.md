@@ -470,12 +470,11 @@ Staging area также называют index (англ. «каталог») и
 Состояние modified означает, что Git сравнил содержимое файла с последней сохранённой версией и нашёл отличия. Например, файл был закоммичен и после этого изменён.
 
 ```mermaid
-graph status;
-git status-->untracked;
-git status-->staged;
-git status-->tracked;
-git status-->modified;
-
+    graph status;
+    git status-->untracked;
+    git status-->staged;
+    git status-->tracked;
+    git status-->modified;
 ```
 
 Для файлов в состояниях staged и modified обычно не указывают, что они также tracked, потому что это состояние подразумевается.
@@ -515,11 +514,10 @@ ___
 - untracked (Untracked files)
 
 ```mermaid
-graph git status;
-git status-->staged;
-git status-->modified;
-git status-->untracked;
-
+    graph git status;
+    git status-->staged;
+    git status-->modified;
+    git status-->untracked;
 ```
 
 Типичные варианты вывода
